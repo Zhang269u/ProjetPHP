@@ -2,9 +2,9 @@
 $db_config=array();
 $db_config['SGBD']='mysql';
 $db_config['HOST']='devbdd.iutmetz.univ-lorraine.fr';
-$db_config['DB_NAME']='zhang269u_SiteVente';
-$db_config['USER']='zhang269u_appli';
-$db_config['PASSWORD']='Vevyilxi2001';
+$db_config['DB_NAME']='lincker2u_PHP';
+$db_config['USER']='lincker2u_appli';
+$db_config['PASSWORD']='31710030';
 
 
 try
