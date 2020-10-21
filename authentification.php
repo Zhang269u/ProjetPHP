@@ -11,7 +11,10 @@ require_once ('Connexion.php');
 session_start();
 if(isset($_POST['user'])&& isset($_POST['mdp'])){
     $bSoumis=1;
-	$result = $objPdo->query('select * from redacteur');
+	if(!$_GET['ref'])
+		$result = $objPdo->query('select * from redacteur');
+	else
+		$result = $objPdo->query('select * from redacteur where idredacteur = '.$GET['ref']);
 	foreach($result as $row){
 		if($_POST['user']==$row['adressemail'] && $_POST['mdp']==$row['motdepasse'])
 	{
