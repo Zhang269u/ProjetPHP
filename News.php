@@ -7,7 +7,7 @@ require_once ('Connexion.php');
 <h1>Liste des Nouvelles</h1>
 <table>
     <?php
-        $result = $objPdo->query('select * from news');
+    $result = $objPdo->query('select * from news');
         foreach ($result as $row )
         {
             echo '<tr>';
@@ -20,6 +20,6 @@ require_once ('Connexion.php');
     ?>
 
 </table>
-<a href="Ajout.php">Ajouter une news</a>
+<a href="Redacteur.php">Login</a>
 </body>
 </html>

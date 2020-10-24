@@ -16,6 +16,7 @@ if(isset($_POST['user'])&& isset($_POST['mdp'])){
 		if($_POST['user']==$row['adressemail'] && $_POST['mdp']==$row['motdepasse'])
 	{
 		$_SESSION['login']='ok';
+        $_SESSION['id']=$row['idredacteur'];
 		if($_SESSION['url']!='')
 			header("location: {$_SESSION['url']}");
 		else header("location: News.php");
