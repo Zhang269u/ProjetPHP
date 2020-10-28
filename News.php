@@ -21,5 +21,6 @@ require_once ('Connexion.php');
 
 </table>
 <a href="Redacteur.php">Login</a>
+<a href="CreeRedacteur.php">Nouveau Redacteur</a>
 </body>
 </html>
