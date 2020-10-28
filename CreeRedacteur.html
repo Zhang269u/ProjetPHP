@@ -1,0 +1,107 @@
+
+<html>
+
+
+    <script language=" javascript " type="text/javascript">
+    function checkEmail(email)
+    {
+    //regex pour ladresse mail
+     var regex2= /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+     return regex2.test(email);
+     }
+     function checkNom(nom)
+    {
+    //regex pour nom et prenom
+     var regex1= /^[A-z]+[\-']?[[a-z]+[\-']?]*[a-z]+$/;
+    
+     return regex1.test(nom);
+     }
+     
+    function checkPrenom(prenom)
+    {
+    //regex pour nom et prenom
+     var regex1= /^[A-z]+[\-']?[[a-z]+[\-']?]*[a-z]+$/;
+    
+     return regex1.test(prenom);
+    }
+    function validate() {
+                var email = document.getElementById("email").value;
+                var nom = document.getElementById("nom").value;
+                var prenom = document.getElementById("prenom").value;
+                
+                 if (checkNom(nom)) {
+                     alert('nom valide');
+                 } else {
+                     alert('nom non valide');
+                 }
+                 if (checkPrenom(prenom)) {
+                     alert('prenom valide');
+                 } else {
+                     alert('prenom non valide');
+                 } 
+                 if (checkEmail(email)) {
+                     alert('Adresse e-mail valide');
+                 } else {
+                     alert('Adresse e-mail non valide');
+                 }
+                 return false;
+             }
+    </script>
+    <body>
+    <div style='background-color:lightgray'>
+    <h1><center>Saisie des Informations du Client</center></h1>
+    <form method="POST">
+    <fieldset style='background-color:lightgray'>
+    <div>
+    <label>Civilité :</label>
+      <input type="radio" id="madame" name="civ" value="madame">
+      <label for="madame">Madame</label>
+      <input type="radio" id="monsieur" name="civ" value="monsieur">
+      <label for="monsieur">Monsieur</label>
+    </div>
+    </fieldset>
+    <fieldset style='background-color:lightgray'>
+    <br>
+    <label for="nom">Nom :</label>
+    <input id='nom'>
+    <br><br>
+    <label for="prenom">Prenom :</label>
+    <input id='prenom'>
+    <br><br>
+    <label for="mail">Adresse Mail :</label>
+    <input id='email'>
+    <br><br>
+    </fieldset>
+    <fieldset style='background-color:lightgray'>
+    <div>
+        <label>Plateformes :</label>
+        <input type="checkbox" id="mac" name="mac">
+        <label for="mac">Mac</label>
+        <input type="checkbox" id="windows" name="windows">
+        <label for="windows">Windows</label>
+        <input type="checkbox" id="linux" name="linux">
+        <label for="linux">Linux</label>
+    </div>
+    </fieldset>
+    <fieldset style='background-color:lightgray'>
+        <div>
+            <label style='vertical-align:middle;' for="informatique">Applications</label>
+            <select style='vertical-align:middle;' size=6 multiple>
+                <option></option>
+                <option>Bureautique</option>
+                <option>Dessin</option>
+                <option>Gestion</option>
+                <option>D&eacute;veloppement</option>
+                <option>SGBD</option>
+            </select>
+        </div>
+    </fieldset>
+    <div style='background-color:#F08000; height:3em; width:100%; text-align:center;'>
+    <button type='submit' onclick="validate()">Valider</button>
+    <button type='clear'>Effacer</button>
+    </div>
+    </form>
+    
+    
+    </body>
+    </html>
