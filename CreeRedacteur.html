@@ -1,7 +1,6 @@
 
 <html>
 
-    <h1>Yolo</h1>
     <script language=" javascript " type="text/javascript">
     function checkEmail(email)
     {
@@ -48,19 +47,9 @@
              }
     </script>
     <body>
-    <div style='background-color:lightgray'>
+    <div>
     <h1><center>Saisie des Informations du Client</center></h1>
     <form method="POST">
-    <fieldset style='background-color:lightgray'>
-    <div>
-    <label>Civilité :</label>
-      <input type="radio" id="madame" name="civ" value="madame">
-      <label for="madame">Madame</label>
-      <input type="radio" id="monsieur" name="civ" value="monsieur">
-      <label for="monsieur">Monsieur</label>
-    </div>
-    </fieldset>
-    <fieldset style='background-color:lightgray'>
     <br>
     <label for="nom">Nom :</label>
     <input id='nom'>
@@ -71,32 +60,9 @@
     <label for="mail">Adresse Mail :</label>
     <input id='email'>
     <br><br>
-    </fieldset>
-    <fieldset style='background-color:lightgray'>
+    
+    
     <div>
-        <label>Plateformes :</label>
-        <input type="checkbox" id="mac" name="mac">
-        <label for="mac">Mac</label>
-        <input type="checkbox" id="windows" name="windows">
-        <label for="windows">Windows</label>
-        <input type="checkbox" id="linux" name="linux">
-        <label for="linux">Linux</label>
-    </div>
-    </fieldset>
-    <fieldset style='background-color:lightgray'>
-        <div>
-            <label style='vertical-align:middle;' for="informatique">Applications</label>
-            <select style='vertical-align:middle;' size=6 multiple>
-                <option></option>
-                <option>Bureautique</option>
-                <option>Dessin</option>
-                <option>Gestion</option>
-                <option>D&eacute;veloppement</option>
-                <option>SGBD</option>
-            </select>
-        </div>
-    </fieldset>
-    <div style='background-color:#F08000; height:3em; width:100%; text-align:center;'>
     <button type='submit' onclick="validate()">Valider</button>
     <button type='clear'>Effacer</button>
     </div>
