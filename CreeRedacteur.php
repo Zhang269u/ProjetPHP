@@ -91,7 +91,7 @@ if (isset($_POST['Valider'])) {
     }
     function checkPassword(password,password2)
     {
-        if(password=="")
+        if(password=="" || password2=="")
             return false;
         return password==password2;
     }
@@ -101,15 +101,28 @@ if (isset($_POST['Valider'])) {
         var prenom = document.getElementById("prenom").value;
         var password = document.getElementById("password").value;
         var confirmpassword = document.getElementById("confirmpassword").value;
-        if (!checkNom(nom)) {
-            alert('nom non valide');
+        if(nom!=""){
+            if (!checkNom(nom))
+                alert('nom non valide');
         }
-        if (!checkPrenom(prenom)) {
-            alert('prenom non valide');
+        else
+            alert('Nom non rempli');
+
+        if(prenom!=""){
+            if (!checkPrenom(prenom)) {
+                alert('prenom non valide');
+            }
         }
-        if (!checkEmail(email)) {
-            alert('Adresse e-mail non valide');
+        else
+            alert('Prenom non rempli');
+        if(email!=""){
+            if (!checkEmail(email)) {
+                alert('Adresse e-mail non valide');
+            }
         }
+        else
+            alert('Email non rempli');
+
         if(!checkPassword(password,confirmpassword)){
             alert('Mot de passe different ou non rempli');
         }
