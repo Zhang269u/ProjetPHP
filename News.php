@@ -27,12 +27,12 @@ session_start();
 
 </table>
 </center>
-<a href="Redacteur.php"><img src="connexion.png"target="_self">
+<a href="Redacteur.php">
     <?php
     if($_SESSION['login']!='ok')
-        echo "";
+        echo '<img src="connexion.png" target="_self">';
     else
-        echo "";
+        echo '<img src="EspaceRedac.png"target="_self">';
         ?>
 </a><br><br>
 <a href="CreeRedacteur.php"><img src="inscription.png"target="_self"></a>
