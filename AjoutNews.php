@@ -1,3 +1,6 @@
+<html lang="Fr">
+<meta charset="UTF-8"/>
+<link rel="stylesheet" href="News.css">
 <?php
 require_once ('Connexion.php');
 error_reporting(E_ALL ^E_NOTICE);
@@ -45,7 +48,7 @@ if(isset($_POST['Valider'])){
 }
 ?>
 <div style="text-align: center;">
-<form method="post" action=''>
+<div class= "newss"><form method="post" action=''>
 
      <label for="Titre">Titre de la news : </label>
     <input type="text" id="Titre" name="titre" value="<?php echo $textenews ?>">
@@ -61,10 +64,11 @@ if(isset($_POST['Valider'])){
     ?>
     </select>
     <span style='color:red'><?php echo $Terreur['theme'] ?></span><br>
-    <label for="textenews">Contenue</label>
+    <label for="textenews">Contenu</label>
     <span style='color:red'><?php echo $Terreur['textenews'] ?></span><br>
     <textarea name="textenews" rows=20 cols=50><?php echo $textenews ?></textarea><br>
-    <input type="submit" id='Valider' name="Valider" value=" Uploader ">
+    <div class="Uploader"><input type="submit" id='Valider' name="Valider" value=" Uploader "></div>
+  </div>
 </form>
 </div>
 </body>
