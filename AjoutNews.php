@@ -56,9 +56,6 @@ if(isset($_POST['Valider'])){
     <?php
         $result = $objPdo->query('select * from theme');
         foreach ($result as $row) {
-            if($theme==$row['idtheme'])
-                echo '<option value=' . $row['idtheme'] . ' selected="selected">' . $row['description'] . '</option>';
-            else
                 echo '<option value=' . $row['idtheme'] . '>' . $row['description'] . '</option>';
         }
     ?>
