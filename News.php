@@ -1,3 +1,6 @@
+<html lang="Fr">
+<meta charset="UTF-8"/>
+<link rel="stylesheet" href="News.css">
 <?php
 require_once ('Connexion.php');
 error_reporting(E_ALL ^E_NOTICE);
@@ -7,6 +10,7 @@ session_start();
 <link href="style.css" rel="stylesheet" type="text/css">
 <body>
 <h1>Liste des Nouvelles</h1>
+<center>
 <table>
     <?php
     $result = $objPdo->query('select * from news');
@@ -22,14 +26,15 @@ session_start();
     ?>
 
 </table>
-<a href="Redacteur.php">
+</center>
+<a href="Redacteur.php"><img src="connexion.png"target="_self">
     <?php
     if($_SESSION['login']!='ok')
-        echo "Login";
+        echo "";
     else
-        echo "Acceder a son espace"
+        echo "";
         ?>
 </a><br><br>
-<a href="CreeRedacteur.php">Nouveau Redacteur</a>
+<a href="CreeRedacteur.php"><img src="inscription.png"target="_self"></a>
 </body>
 </html>

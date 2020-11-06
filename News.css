@@ -1,13 +1,17 @@
 
 html{
   background-image: url('Newsbg.jpg');
-  text-align: center;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
 }
 
 body{
   margin: 200;
   font-family: helvetica;
   text-align: center;
+  background-position: center;
+
   color:white;
 
 }
@@ -17,6 +21,9 @@ h1,h2,h3{
   text-transform: capitalize;
 
 }
+h1,h2{
+  text-shadow: 5px;
+}
 form{
   text-align: center;
   padding: 15px;
@@ -25,44 +32,33 @@ form{
   opacity: 0.8;
 
 }
-.titre{
-  margin-bottom: 20px;
-  font-weight: bold;
-  font-size: 130%;
-}
-.vaaalider{
-  text-align: center;
-}
-.newss{
-  padding:15px;
-  margin-right: -120px;
-}
-.ajouter{
-  text-align: center;
-}
-.Uploader{
-  text-align: center;
-}
 table{
 
+border-spacing: 0px;
+border-top: : 10px;
+border-left: 80px;
+border-color: black;
+box-shadow: 15px 30px 40px black;
   text-align: center;
   padding: 15px;
-  border-radius: 50px;
-  background-color: grey;
+  border-radius: 00px;
   opacity: 0.8;
   font-weight: bold;
   text-transform: capitalize;
 
 }
-td{
+tr{
+
+padding: 200px;
+margin-bottom: 200px;
+box-shadow: 15px 30px 40px black;
+background-color: grey;
   text-align: center;
+
 }
-.tabnews{
-
-  background-position: center;
-  padding:20px;
-
-  margin: auto;
+td{
+box-shadow: 0 4px 2px -2px black;
+padding: 50px;
   text-align: center;
 }
 textarea{
@@ -72,33 +68,8 @@ textarea{
 tbody {
   text-align: center;
 padding: auto;
-
-}
-.newstab{
-text-align: center;
-
-
-
-}
-.images {
-  float:center;
-
-  }
-
-.login a{
-  float: none;
-  margin: 10px 0 10px 0;
-  font-weight: bold;
-  font-size: 2px;
 }
 
-.nouveau a{
-  float:none;
-  margin: 10px 0 10px 0;
-  font-weight: bold;
-  font-size: 25px;
-
-}
 
  img{
   width:auto;
@@ -107,4 +78,37 @@ text-align: center;
 }
 img:hover{
  transform: scale(1.2);
+}
+.titre{
+  font-weight: bolder;
+  text-align: center;
+  padding: 20px;
+}
+.formaut{
+  text-align: center;
+  font-weight: bold;
+}
+.valider{
+  text-align: center;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+.phrase1, .phrase2{
+  padding-bottom: 10px;
+}
+.redac tr{
+  text-align: center;
+
+}
+.titre1, .titre2, .titre3{
+  font-size: monospace;
+  padding:10px;
+  font-weight: bold;
+}
+.Uploader{
+  padding:10px;
+}
+.newss{
+
+  border-color: white;
 }

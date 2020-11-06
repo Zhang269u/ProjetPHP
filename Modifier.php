@@ -1,3 +1,6 @@
+<html lang="Fr">
+<meta charset="UTF-8"/>
+<link rel="stylesheet" href="News.css">
 <?php
 require_once ('Connexion.php');
 error_reporting(E_ALL ^E_NOTICE);

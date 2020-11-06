@@ -50,11 +50,11 @@ if(isset($_POST['Valider'])){
 <div style="text-align: center;">
 <div class= "newss"><form method="post" action=''>
 
-     <label for="Titre">Titre de la news : </label>
+     <div class="titre1"><label for="Titre">Titre de la news : </label></div>
     <input type="text" id="Titre" name="titre" value="<?php echo $textenews ?>">
     <span style='color:red'><?php echo $Terreur['titre'] ?></span>
     <br>
-    Theme : <select name="theme" id="theme">
+    <div class="titre2">Theme : <select name="theme" id="theme"></div>
         <option value=""></option>
     <?php
         $result = $objPdo->query('select * from theme');
@@ -64,7 +64,7 @@ if(isset($_POST['Valider'])){
     ?>
     </select>
     <span style='color:red'><?php echo $Terreur['theme'] ?></span><br>
-    <label for="textenews">Contenu</label>
+    <div class="titre3"><label for="textenews">Contenu de la nouvelle</label></div>
     <span style='color:red'><?php echo $Terreur['textenews'] ?></span><br>
     <textarea name="textenews" rows=20 cols=50><?php echo $textenews ?></textarea><br>
     <div class="Uploader"><input type="submit" id='Valider' name="Valider" value=" Uploader "></div>

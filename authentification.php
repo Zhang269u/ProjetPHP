@@ -31,10 +31,10 @@ else
 ?>
 <div class="titre">
 Pour accéder à cette page il est nécessaire de vous identifier <br/></div>
-<form method="POST" action="authentification.php">
-    Identifiant : <input type='text' name='user'><br/></input>
-    Mot de passe : <input type='password' name='mdp'><br/></input>
-    <div classe="vaaalider"><input type='submit' value='valider'></input></div>
+<div class="formaut"><form method="POST" action="authentification.php">
+    <div class="phrase1">Identifiant : <input type='text' name='user'><br/></input></div>
+    <div class="phrase2">Mot de passe : <input type='password' name='mdp'><br/></input></div>
+    <div classe="valider"><input type='submit' value='valider'></input></div></div>
 </form>
 </body>
 </html>
