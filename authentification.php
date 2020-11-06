@@ -1,6 +1,3 @@
-<html lang="Fr">
-<meta charset="UTF-8"/>
-<link rel="stylesheet" href="News.css">
 <?php
 require_once ('Connexion.php');
 ?>
@@ -10,7 +7,7 @@ require_once ('Connexion.php');
 </head>
 
 <body>
-<?php
+<?php 
 session_start();
 if(isset($_POST['user'])&& isset($_POST['mdp'])){
     $bSoumis=1;
@@ -29,12 +26,12 @@ if(isset($_POST['user'])&& isset($_POST['mdp'])){
 else
     $bSoumis=0;
 ?>
-<div class="titre">
-Pour accéder à cette page il est nécessaire de vous identifier <br/></div>
+
+Pour accéder à cette page il est nécessaire de vous identifier <br/>
 <form method="POST" action="authentification.php">
     Identifiant : <input type='text' name='user'><br/></input>
     Mot de passe : <input type='password' name='mdp'><br/></input>
-    <div classe="vaaalider"><input type='submit' value='valider'></input></div>
+    <input type='submit' value='valider'></input>
 </form>
 </body>
 </html>
