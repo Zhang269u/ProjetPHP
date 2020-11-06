@@ -1,5 +1,7 @@
 <?php
 require_once ('Connexion.php');
+error_reporting(E_ALL ^E_NOTICE);
+session_start();
 ?>
 <html>
 <link href="style.css" rel="stylesheet" type="text/css">
@@ -20,7 +22,14 @@ require_once ('Connexion.php');
     ?>
 
 </table>
-<a href="Redacteur.php">Login</a>
+<a href="Redacteur.php">
+    <?php
+    if($_SESSION['login']!='ok')
+        echo "Login";
+    else
+        echo "Acceder a son espace"
+        ?>
+</a><br><br>
 <a href="CreeRedacteur.php">Nouveau Redacteur</a>
 </body>
 </html>
