@@ -44,7 +44,7 @@ foreach ($result2 as $a){
 
 ?>
 <br>
-<a href="deconnexion.php"><img src="img/deconnexion.png"target="_self"></a>
+<a href="deconnexion.php" onclick="return(confirm('Etes-vous sûr de vouloir vous deconnecter ?'));"><img src="img/deconnexion.png"target="_self"></a>
 <a href="News.php"><img src="img/retour.png"target="_self"></a>
 </body>
 </html>
