@@ -62,7 +62,7 @@ if($_SESSION['login']!='ok'){
         <input type="text" id="Titre" name="titre" value="<?php echo $titre ?>">
         <span style='color:red'><?php echo $Terreur['titre'] ?></span>
         <br>
-        Theme : <select name="theme" id="theme" value="<?php echo $theme ?>">
+        Thème : <select name="theme" id="theme" value="<?php echo $theme ?>">
             <option value=""></option>
             <?php
             $result = $objPdo->query('select * from theme');
@@ -75,7 +75,7 @@ if($_SESSION['login']!='ok'){
             ?>
         </select>
         <span style='color:red'><?php echo $Terreur['theme'] ?></span><br>
-        <label for="textenews">Contenue</label>
+        <label for="textenews">Contenu</label>
         <span style='color:red'><?php echo $Terreur['textenews'] ?></span><br>
         <textarea name="textenews" rows=20 cols=50><?php echo $textenews ?></textarea><br>
         <input type="submit" id='Valider' name="Modifier" value=" Modifier ">
