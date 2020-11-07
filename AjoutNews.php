@@ -56,7 +56,7 @@ if(isset($_POST['Valider'])){
     <input type="text" id="Titre" name="titre" value="<?php echo $textenews ?>">
     <span style='color:red'><?php echo $Terreur['titre'] ?></span>
     <br>
-    <div class="titre2">Theme : <select name="theme" id="theme"></div>
+    <div class="titre2">Thème : <select name="theme" id="theme"></div>
         <option value=""></option>
     <?php
         $result = $objPdo->query('select * from theme');
