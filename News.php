@@ -18,11 +18,11 @@ if (isset($_POST['ordre']))
 <body>
 <h1>Liste des Nouvelles</h1>
 <form method="post">
-    <select name="ordre" >
+  <div class="orga">  <select name="ordre" >
         <option value="datenews ASC" <?php if($ordre=='datenews ASC') echo 'selected="selected"'  ?>>Date croissante</option>
         <option value="datenews DESC" <?php if($ordre=='datenews DESC') echo 'selected="selected"'  ?>>Date décroissante</option>
         <option value="idtheme ASC" <?php if($ordre=='idtheme ASC') echo 'selected="selected"'  ?>>Theme</option>
-    </select><br>
+    </select><br></div>
     <input type="submit" name="change" value=" Organiser ">
 </form>
 <center>
@@ -48,6 +48,7 @@ if (isset($_POST['ordre']))
 
     </table>
 </center>
+<br>
 <a href="Redacteur.php">
     <?php
     if($_SESSION['login']!='ok')

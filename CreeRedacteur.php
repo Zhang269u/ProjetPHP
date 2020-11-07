@@ -150,16 +150,16 @@ if (isset($_POST['Valider'])) {
         <label for='nom'>Nom :</label>
         <input id='nom' name='nom' type='text' value=<?php echo $nom ?>><span style='color:red'><?php echo $Terreur['nom'] ?></span>
         <br><br>
-        <label for='prenom'>Prenom :</label>
+        <label for='prenom'>Prénom :</label>
         <input id='prenom' name='prenom' type='text' value=<?php echo $prenom ?>><span style='color:red'><?php echo $Terreur['prenom'] ?></span>
         <br><br>
         <label for='email'>Adresse Mail :</label>
         <input id='email' name='email' type='text' value=<?php echo $email ?>><span style='color:red'><?php echo $Terreur['email'] ?></span>
         <br><br>
-        <label for='password'>Password :</label>
+        <label for='password'>Mot de passe :</label>
         <input id='password' name='password' type='password'><span style='color:red'><?php echo $Terreur['password'] ?></span>
         <br><br>
-        <label for='confirmpassword'>Confirm Password :</label>
+        <label for='confirmpassword'>Confirmer mot de passe :</label>
         <input id='confirmpassword'  name='confirmpassword' type="password">
         <br><br>
         <input type='submit' id='Valider' name="Valider" value="Ajouter" onclick="validate()">

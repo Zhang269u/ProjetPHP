@@ -11,14 +11,14 @@ body{
   font-family: helvetica;
   text-align: center;
   background-position: center;
-
+line-height: 1.5;
   color:white;
 
 }
 
 h1,h2,h3{
   color:white;
-  text-transform: capitalize;
+  text-transform: uppercase;
 
 }
 h1,h2{
@@ -39,12 +39,11 @@ border-top: : 10px;
 border-left: 80px;
 border-color: black;
 box-shadow: 15px 30px 40px black;
-  text-align: center;
-  padding: 15px;
-  border-radius: 00px;
-  opacity: 0.8;
-  font-weight: bold;
-  text-transform: capitalize;
+padding: 15px;
+border-radius: 00px;
+opacity: 0.8;
+font-weight: bold;
+
 
 }
 tr{
@@ -53,7 +52,9 @@ padding: 200px;
 margin-bottom: 200px;
 box-shadow: 15px 30px 40px black;
 background-color: grey;
-  text-align: center;
+text-align: center;
+text-align: justify;
+
 
 }
 td{
@@ -107,8 +108,4 @@ img:hover{
 }
 .Uploader{
   padding:10px;
-}
-.newss{
-
-  border-color: white;
 }

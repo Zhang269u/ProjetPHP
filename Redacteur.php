@@ -1,4 +1,4 @@
-<?php
+ <?php
 require_once ('Connexion.php');
 ?>
 <html lang="Fr">
@@ -43,6 +43,8 @@ foreach ($result2 as $a){
 '</center>'
 
 ?>
+<br>
 <a href="deconnexion.php"><img src="img/deconnexion.png"target="_self"></a>
+<a href="News.php"><img src="img/retour.png"target="_self"></a>
 </body>
 </html>
