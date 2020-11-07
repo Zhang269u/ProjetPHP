@@ -30,19 +30,19 @@ foreach ($result2 as $a){
             echo '<td>'.$row['titrenews'].'</td>';
             echo '<td>'.$row['datenews'].'</td>';
             echo '<td>'.$row['textenews'].'</td>';
-            echo '<td><a href="Modifier.php?ref='.$row['idnews'].'"><img src="écrire.png"target="_self"></a></td>';
-            echo '<td><a href="Supprimer.php?ref='.$row['idnews'].'"><img src="supprimer.png"target="_self"></a></td>';
+            echo '<td><a href="Modifier.php?ref='.$row['idnews'].'"><img src="img/écrire.png"target="_self"></a></td>';
+            echo '<td><a href="Supprimer.php?ref='.$row['idnews'].'"><img src="img/supprimer.png"target="_self"></a></td>';
             echo '</tr>';
         }
-        echo '<tr><td><a href="AjoutNews.php"><img src="+.png"target="_self"></a></td></tr>';
+        echo '<tr><td><a href="AjoutNews.php"><img src="img/+.png"target="_self"></a></td></tr>';
         echo '</table>';
     }
     else
-        echo '<table><tr><td><a href="AjoutNews.php"></a></td></tr></table>';
+        echo '<table><tr><td><a href="AjoutNews.php"><img src="img/+.png"target="_self"></a></td></tr></table>';
 }
 '</center>'
 
 ?>
-<a href="deconnexion.php"><img src="deconnexion.png"target="_self"></a>
+<a href="deconnexion.php"><img src="img/deconnexion.png"target="_self"></a>
 </body>
 </html>
