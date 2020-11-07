@@ -31,7 +31,7 @@ foreach ($result2 as $a){
             echo '<td>'.$row['datenews'].'</td>';
             echo '<td>'.$row['textenews'].'</td>';
             echo '<td><a href="Modifier.php?ref='.$row['idnews'].'"><img src="img/écrire.png"target="_self"></a></td>';
-            echo '<td><a href="Supprimer.php?ref='.$row['idnews'].'"><img src="img/supprimer.png"target="_self"></a></td>';
+            echo '<td><a href="Supprimer.php?ref='.$row['idnews'].'" onclick='.'"return(confirm('."'Etes-vous sûr de vouloir supprimer cette article ?'".'));"><img src="img/supprimer.png"target="_self"></a></td>';
             echo '</tr>';
         }
         echo '<tr><td><a href="AjoutNews.php"><img src="img/+.png"target="_self"></a></td></tr>';
