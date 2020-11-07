@@ -13,6 +13,8 @@ $_SESSION['url']='AjoutNews.php';
 if($_SESSION['login']!='ok'){
     header("Location:authentification.php");
 }
+if(isset($_POST['Annuler']))
+    header('Location:Redacteur.php');
 $Terreur=[];
 if(isset($_POST['Valider'])){
     $Terreur['titre']='A saisir';
@@ -67,7 +69,8 @@ if(isset($_POST['Valider'])){
     <div class="titre3"><label for="textenews">Contenu de la nouvelle</label></div>
     <span style='color:red'><?php echo $Terreur['textenews'] ?></span><br>
     <textarea name="textenews" rows=20 cols=50><?php echo $textenews ?></textarea><br>
-    <div class="Uploader"><input type="submit" id='Valider' name="Valider" value=" Uploader "></div>
+    <input type="submit" id='Valider' name="Valider" value=" Uploader ">
+        <input type="submit" value=' Annuler ' name="Annuler">
   </div>
 </form>
 </div>

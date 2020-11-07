@@ -10,8 +10,10 @@ foreach($result2 as $row){
     $theme=$row['idtheme'];
     $textenews=$row['textenews'];
 }
+if(isset($_POST['Annuler']))
+    header('Location:Redacteur.php');
 $Terreur=[];
-if(isset($_POST['Valider'])){
+if(isset($_POST['Modifier'])){
     $Terreur['titre']='A saisir';
     $titre='';
     if(isset($_POST['titre'])){
@@ -76,7 +78,8 @@ if($_SESSION['login']!='ok'){
         <label for="textenews">Contenue</label>
         <span style='color:red'><?php echo $Terreur['textenews'] ?></span><br>
         <textarea name="textenews" rows=20 cols=50><?php echo $textenews ?></textarea><br>
-        <input type="submit" id='Valider' name="Valider" value=" Modifier ">
+        <input type="submit" id='Valider' name="Modifier" value=" Modifier ">
+        <input type="submit" value=' Annuler ' name="Annuler">
     </form>
 </div>
 </body>

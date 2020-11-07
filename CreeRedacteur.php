@@ -4,6 +4,8 @@
 <?php
 require_once ('Connexion.php');
 error_reporting(E_ALL ^E_NOTICE);
+if(isset($_POST['Annuler']))
+    header('Location:News.php');
 $Terreur = [];
 if (isset($_POST['Valider'])) {
     $Terreur['nom'] = 'A saisir';
@@ -161,6 +163,7 @@ if (isset($_POST['Valider'])) {
         <input id='confirmpassword'  name='confirmpassword' type="password">
         <br><br>
         <input type='submit' id='Valider' name="Valider" value="Ajouter" onclick="validate()">
+        <input type="submit" value=' Annuler ' name="Annuler">
     </form>
 </body>
 </html>
